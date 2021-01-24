@@ -12,23 +12,22 @@ document.addEventListener('DOMContentLoaded', () => {
             if(currentPlayer === 1) {
                 squares[index].classList.add('taken')
                 squares[index].classList.add('player-one')
-                // player change
+                
                 currentPlayer = 2
                 displayCurrentPlayer.innerHTML = currentPlayer
             } else if (currentPlayer === 2) {
                 squares[index].classList.add('taken')
                 squares[index].classList.add('player-two')
-                // player change
+                
                 currentPlayer = 1
                 displayCurrentPlayer.innerHTML = currentPlayer
             }
-        } else {
-            alert('You cannot place in this square because the below spot has not been used')
+        } else { alert('You cannot place in this square because the below spot has not been used')
         }
     }
   })(i)
 
-// win condition
+// win condition function
 
   function winCondtion() {
     const winningArrays = [
