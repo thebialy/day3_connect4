@@ -1,5 +1,5 @@
 .grid {
-    border: 1px solid;
+    border: 1.5px solid;
     display: flex;
     flex-wrap: wrap;
     height: 126px;
